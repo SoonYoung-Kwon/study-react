@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MyComponent from './components/MyComponent';
+import Counter from './components/Counter';
+import Say from './components/Say';
+import EventPractice from './components/EventPractice';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+
+	return (
+		<div>
+			<MyComponent name="React" favoriteNumber={3}>Redux</MyComponent> <pre/>
+			<Counter></Counter> <pre/>
+			<Say></Say> <pre/>
+			<EventPractice></EventPractice> <pre/>
+		</div>
+	);
+};
 
 export default App;
