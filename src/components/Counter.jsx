@@ -11,6 +11,10 @@ const Counter = () => {
                 setNumber(number + 1)
                 console.log("Call setState")
             }}>+1</button>
+            <button onClick={ () => {
+                setNumber(number - 1)
+                console.log("Call setState")
+            }}>-1</button>
         </div>
     );
 };
